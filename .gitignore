@@ -1,0 +1,25 @@
+# Compilados Java
+*.class
+target/
+build/
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+nbproject/private/
+nbbuild/
+nbdist/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
