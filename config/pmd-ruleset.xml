@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="BK Programacion - Ruleset Gestion Hotelera"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+            https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Ruleset personalizado para el proyecto Gestion Hotelera.
+        Combina reglas estandar de PMD con personalizaciones del equipo BK.
+        Demuestra el criterio d) "Posibilidades de configuracion del analizador".
+    </description>
+
+    <!-- ============ MEJORES PRACTICAS ============ -->
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod"/>
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+    <rule ref="category/java/bestpractices.xml/UseVarargs"/>
+
+    <!-- ============ ESTILO DE CODIGO ============ -->
+    <rule ref="category/java/codestyle.xml/ShortVariable">
+        <properties>
+            <!-- Personalizacion: permitir nombres cortos comunes en bucles/lambdas -->
+            <property name="minimum" value="2"/>
+        </properties>
+    </rule>
+    <rule ref="category/java/codestyle.xml/LongVariable">
+        <properties>
+            <property name="minimum" value="40"/>
+        </properties>
+    </rule>
+    <rule ref="category/java/codestyle.xml/UnnecessaryImport"/>
+
+    <!-- ============ DISENO ============ -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <!-- Personalizacion: limite 10 (default es 10 tambien, lo dejamos explicito) -->
+            <property name="classReportLevel" value="40"/>
+            <property name="methodReportLevel" value="10"/>
+        </properties>
+    </rule>
+    <rule ref="category/java/design.xml/ExcessiveParameterList">
+        <properties>
+            <property name="minimum" value="6"/>
+        </properties>
+    </rule>
+    <rule ref="category/java/design.xml/GodClass"/>
+    <rule ref="category/java/design.xml/SingularField"/>
+
+    <!-- ============ DETECTAR ERRORES POTENCIALES ============ -->
+    <rule ref="category/java/errorprone.xml/EmptyCatchBlock"/>
+    <rule ref="category/java/errorprone.xml/AvoidLiteralsInIfCondition">
+        <properties>
+            <property name="ignoreMagicNumbers" value="-1,0,1"/>
+        </properties>
+    </rule>
+
+    <!-- ============ RENDIMIENTO ============ -->
+    <rule ref="category/java/performance.xml/AvoidInstantiatingObjectsInLoops"/>
+    <rule ref="category/java/performance.xml/UseStringBufferForStringAppends"/>
+
+    <!-- ============ MULTIHILO ============ -->
+    <rule ref="category/java/multithreading.xml/AvoidThreadGroup"/>
+
+</ruleset>
