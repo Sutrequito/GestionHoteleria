@@ -1,0 +1,60 @@
+name: CI - Gestion Hotelera
+
+# Workflow de Integracion Continua (criterio h de la rubrica).
+# Se dispara en cada push y pull request. Compila el codigo, ejecuta los
+# tests JUnit, lanza el analizador PMD y publica el JavaDoc como artefacto.
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Build, Test, PMD y JavaDoc
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK 11
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'maven'
+
+      - name: Compilar
+        run: mvn -B compile
+
+      - name: Ejecutar tests JUnit
+        run: mvn -B test
+
+      - name: Analisis estatico con PMD
+        run: mvn -B pmd:pmd
+
+      - name: Generar JavaDoc
+        run: mvn -B javadoc:javadoc
+
+      - name: Publicar reporte PMD como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pmd-report
+          path: target/site/pmd.html
+
+      - name: Publicar JavaDoc como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: javadoc
+          path: target/site/apidocs/
+
+      - name: Publicar resultados de tests
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: target/surefire-reports/
