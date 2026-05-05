@@ -9,7 +9,7 @@ package com.bkprog.hotel.modelo;
  * dispersos por el codigo, lo que era propenso a errores tipograficos. Al moverlos
  * a un {@code enum} se obtiene seguridad de tipos en tiempo de compilacion.</p>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  */

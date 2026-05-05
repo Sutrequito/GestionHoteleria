@@ -13,7 +13,7 @@ import java.util.Objects;
  * no se pueden modificar. Esto facilita el razonamiento concurrente y
  * elimina toda una familia de bugs.</p>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  */

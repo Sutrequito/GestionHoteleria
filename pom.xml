@@ -15,7 +15,7 @@
         Entornos de Desarrollo - DAW. Aplica refactorizacion, pruebas unitarias,
         analisis estatico, control de versiones, integracion continua y JavaDoc.
     </description>
-    <url>https://github.com/rodrigueishonsi/gestion-hotelera</url>
+    <url>https://github.com/Sutrequito/GestionHoteleria</url>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

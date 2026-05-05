@@ -11,7 +11,7 @@ import java.util.Objects;
  * <em>"Mover Clase"</em> y <em>"Encapsular Campos"</em>, la reserva pasa a
  * ser una entidad de dominio con campos privados, getters y validaciones.</p>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  */

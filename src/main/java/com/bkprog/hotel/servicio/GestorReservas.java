@@ -36,7 +36,7 @@ import java.util.logging.Logger;
  *         TipoHabitacion.SUITE, 3, 80.0d, 10.0d);
  * }</pre>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  * @see CalculadoraTarifa

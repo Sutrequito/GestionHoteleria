@@ -15,7 +15,7 @@ import com.bkprog.hotel.modelo.TipoHabitacion;
  *       mezcla varias responsabilidades.</li>
  * </ul>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  */

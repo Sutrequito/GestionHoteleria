@@ -12,7 +12,7 @@ import java.util.List;
  * base de datos...) debe ofrecer. Esto permite cambiar de almacen sin
  * modificar el resto del sistema (principio de inversion de dependencias).</p>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  */

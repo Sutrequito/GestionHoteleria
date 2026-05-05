@@ -13,7 +13,7 @@ import java.util.List;
  * implementacion futura podria persistir en base de datos sin afectar al
  * resto del codigo gracias al patron <em>"Extraer Interfaz"</em>.</p>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  */

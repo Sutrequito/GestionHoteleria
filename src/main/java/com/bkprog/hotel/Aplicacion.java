@@ -15,7 +15,7 @@ import com.bkprog.hotel.servicio.RepositorioReservasMemoria;
  * tras aplicar los patrones de refactorizacion del Tema 4. No tiene
  * logica de negocio: actua como cliente del API publico.</p>
  *
- * @author Rodri (rodrigueishonsi)
+ * @author Rodrigo Siboldi
  * @version 1.0
  * @since 2026-05-05
  */

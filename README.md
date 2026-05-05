@@ -11,7 +11,7 @@ modulo *Entornos de Desarrollo* (DAW). Cubre los 9 criterios de la rubrica:
 | d | Configuracion del analizador | `config/pmd-ruleset.xml` |
 | e | Aplicar patrones con el IDE | Ver memoria PDF |
 | f | Control de versiones integrado | `git log` (carpeta `.git`) |
-| g | Repositorio remoto | `https://github.com/rodrigueishonsi/gestion-hotelera` |
+| g | Repositorio remoto | `https://github.com/Sutrequito/GestionHoteleria` |
 | h | Integracion continua | `.github/workflows/ci.yml` |
 | i | Documentacion de clases | `mvn javadoc:javadoc` => `target/site/apidocs/` |
 
@@ -27,4 +27,4 @@ mvn package           # JAR final
 
 ## Autor
 
-Rodri (rodrigueishonsi) - Mayo 2026
+Rodri (Sutrequito) - Mayo 2026
